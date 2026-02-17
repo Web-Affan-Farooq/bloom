@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./footer.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <style>
         :root {
@@ -13,47 +14,164 @@
             --accent: #dededed1 !important;
         }
 
-        .bg-background {
+        .bg-gray {
             background-color: var(--primary);
         }
 
-        nav a {
-            color: var(--accent);
+        li {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .btn {
+            background-color: var(--foreground);
+            columns: var(--accent);
         }
     </style>
 </head>
 
 <body>
+    <!-- <input type="checkbox" id="menu-bar">
+            <label for="menu-bar" class="menu-icon"><i class="fa-solid fa-bars"></i></label> -->
+    <div class="bg-gray">
+        <header class="py-3 container-lg row m-auto justify-content-sm-around gap-sm-0 gap-2">
+            <img src="./images/logo.png" alt="logo" class="col-auto">
+            <nav class="col-12 col-sm-8 justify-content-lg-center col-xl-5 row align-items-center gap-sm-2">
+                <a href="#" class="col-sm-2 col-12 text-white py-2 text-center">Home</a>
+                <a href="#" class="col-sm-2 col-12 text-white py-2 text-center">About</a>
+                <a href="#" class="col-sm-2 col-12 text-white py-2 text-center">Services</a>
+                <a href="#" class="col-sm-2 col-12 text-white py-2 text-center">Portfolio</a>
+                <a href="#" class="col-sm-2 col-12 text-white py-2 text-center">Contact</a>
+            </nav>
+        </header>
+    </div>
 
-    <header>
-        <nav class="navbar navbar-expand-lg bg-background">
-            <div class="container">
-                <a class="navbar-brand" href="#"><img src="./images/logo.png"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse row justify-content-end md:bg-success" id="navbarSupportedContent">
-                    <ul class="text-center navbar-nav mb-2 mb-lg-0 col-4">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                    </ul>
+    <main>
+        <article>
+
+            <section class="py-5 container-xl m-auto row justify-content-center gap-lg-4">
+                <div class="col-md-6 col-lg-5">
+                    <h1 class="fw-bold">Lorem ipsum dolar sit</h1>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente id laudantium natus nulla
+                            tempora in, iure temporibus quas error? Officiis repellat consequuntur maiores laudantium
+                            cumque voluptatem hic quae minus exercitationem.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente id laudantium natus nulla
+                            tempora in, iure temporibus quas error? Officiis repellat consequuntur maiores laudantium
+                            cumque voluptatem hic quae minus exercitationem.</p>
+                    </div>
+                    <div> <button type="button" class="btn">Learn more</button> </div>
+                </div>
+                <div class="col-4 col-lg-auto"> <img src="./images/banner-image.jpg" alt="Banner Image"
+                        class="w-auto h-50"> </div>
+            </section>
+
+            <section class="container-lg py-5">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 justify-content-center">
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img src="./images/banner-image.jpg" class="card-img-top img-fluid" alt="Card image">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text lh-1">Some quick example text to build on the card title and make up
+                                    the bulk
+                                    of the card's content.</p>
+                                <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img src="./images/banner-image.jpg" class="card-img-top img-fluid" alt="Card image">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text lh-1">Some quick example text to build on the card title and make up
+                                    the bulk
+                                    of the card's content.</p>
+                                <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img src="./images/banner-image.jpg" class="card-img-top img-fluid" alt="Card image">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text lh-1">Some quick example text to build on the card title and make up
+                                    the bulk
+                                    of the card's content.</p>
+                                <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+    <footer>
+        <div class="latest-posts">
+            <h2>Latest posts</h2>
+            <div class="ltp-container">
+                <div class="post-item">
+                    <div class="img"></div>
+                    <div class="content">
+                        <h3>Title for post one</h3>
+                        <p>Lorem ipsum dolor sit amet lorem</p>
+                    </div>
+                </div>
+                <div class="post-item">
+                    <div class="img"></div>
+                    <div class="content">
+                        <h3>Title for post two</h3>
+                        <p>Lorem ipsum dolor sit amet lorem</p>
+                    </div>
+                </div>
+                <div class="post-item">
+                    <div class="img"></div>
+                    <div class="content">
+                        <h3>Title for post three</h3>
+                        <p>Lorem ipsum dolor sit amet lorem</p>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
+        </div>
 
+        <div class="about">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptates quis vitae aliquam ullam
+                nesciunt sunt animi, doloribus facere voluptas alias numquam incidunt delectus soluta laboriosam.</p>
+            <br>
+            <p>Deserunt quibusdam recusandae corporis aliquid nisi aperiam obcaecati? Non impedit consequuntur, velit,
+                voluptas, ipsam ullam quaerat porro.</p>
+        </div>
+
+        <div class="links">
+            <h2>Stay connected</h2>
+            <div class="links-container">
+                <div class="social-link">
+                    <img src="./images/facebook.jpg" alt="facebook" class="logo">
+                    <p>Facebook</p>
+                </div>
+                <div class="social-link">
+                    <img src="./images/twitter.jpg" alt="twitter" class="logo">
+                    <p>Twitter</p>
+                </div>
+                <div class="social-link">
+                    <img src="./images/rss.jpg" alt="rss" class="logo">
+                    <p>RSS</p>
+                </div>
+                <div class="social-link">
+                    <img src="./images/google.jpg" alt="google" class="logo">
+                    <p>Google</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
